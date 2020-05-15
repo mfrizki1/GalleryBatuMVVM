@@ -12,7 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.detailBatu.DetailBatuActivity"/>
+        <activity android:name=".ui.detailBatu.DetailBatuActivity">
+            <meta-data android:name = "android.support.PARENT_ACTIVITY"
+                android:value=".ui.wisataBatu.WisataBatuActivity"/>
+        </activity>
         <activity android:name=".ui.wisataBatu.WisataBatuActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
